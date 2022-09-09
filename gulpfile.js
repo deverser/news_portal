@@ -3,11 +3,11 @@
 const { src, dest, parallel, series, watch } = require('gulp');
 const del = require('del');
 const sass = require('gulp-sass')(require('sass'));
-const pug = require('gulp-pug');
 const autoprefixer = require('gulp-autoprefixer');
 const gcssmq = require('gulp-group-css-media-queries');
-const includeFiles = require('gulp-include');
+//const includeFiles = require('gulp-include');
 const browserSync = require('browser-sync').create();
+const pug = require('gulp-pug');
 
 
 function browsersync() {
@@ -25,47 +25,47 @@ function browsersync() {
 }
 
 function views() {
-  return src('./src/*.pug')
+  return src('./src/components/index.pug')
     .pipe(
       pug({
         pretty: true
       })
     )
-    .pipe(dest('./dist'));
-};
+    .pipe(dest('./public'));
+}
 
 function styles() {
-  return src('./src/styles/style.scss')
+  return src('src/styles/styles.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({ grid: true }))
   .pipe(gcssmq())
-  .pipe(dest('./public/css/'))
+  .pipe(dest('public/css/'))
   .pipe(browserSync.stream());
 }
 
 
 function scripts() {
   return src('./src/js/script.js')
-  .pipe(
-    includeFiles({
-      includePaths: './src/components/**/',
-    })
-  )
+//   .pipe(
+//     includeFiles({
+//       includePaths: './src/components/**/',
+//     })
+//   )
   .pipe(dest('./public/js/'))
   .pipe(browserSync.stream());
 }
 
 
-function pages() {
-  return src('./src/pages/*.html')
-  .pipe(
-    includeFiles({
-      includePaths: './src/components/**/',
-    })
-  )
-  .pipe(dest('./public/'))
-  .pipe(browserSync.reload({ stream: true, }));
-}
+// function pages() {
+//   return src('./src/pages/*.html')
+//   .pipe(
+//     includeFiles({
+//       includePaths: './src/components/**/',
+//     })
+//   )
+//   .pipe(dest('./public/'))
+//   .pipe(browserSync.reload({ stream: true, }));
+// }
 
 
 function copyFonts() {
@@ -94,7 +94,7 @@ function watchDev() {
     'change',
     browserSync.reload
   );
-  watch(['./src/pages/*.html', './src/components/**/*.html'], pages).on(
+  watch(['./src/components/index.pug', './src/components/**/*.pug'], views).on(
     'change',
     browserSync.reload
   );
@@ -106,7 +106,7 @@ exports.views = views;
 exports.clean = clean;
 exports.scripts = scripts;
 exports.styles = styles;
-exports.pages = pages;
+//exports.pages = pages;
 exports.copyResources = copyResources;
 
 exports.default = parallel(
@@ -115,7 +115,7 @@ exports.default = parallel(
   styles,
   scripts,
   copyResources,
-  pages,
+  //pages,
   browsersync,
   watchDev
 );
@@ -126,5 +126,5 @@ exports.build = series(
   styles,
   scripts,
   copyResources,
-  pages
+  //pages
 );
