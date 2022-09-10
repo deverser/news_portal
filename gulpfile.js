@@ -90,7 +90,7 @@ async function clean() {
 
 function watchDev() {
   watch(['./src/js/script.js', './src/components/**/*.js'], scripts);
-  watch(['./src/styles/style.scss', './src/components/**/*.scss'], styles).on(
+  watch(['./src/styles/styles.scss', './src/components/**/*.scss'], styles).on(
     'change',
     browserSync.reload
   );
