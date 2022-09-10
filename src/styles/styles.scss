@@ -16,6 +16,11 @@ body {
 	background-color: #E5E5E5;
 }
 
+.container {
+	width: 1504px;
+	margin: 0 auto;
+}
+
 @import '../components/buttons/buttons';
 @import '../components/header/header';
 @import '../components/main/main';

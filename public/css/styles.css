@@ -14,6 +14,11 @@ body {
   background-color: #E5E5E5;
 }
 
+.container {
+  width: 1504px;
+  margin: 0 auto;
+}
+
 .button {
   width: 224px;
   height: 50px;
@@ -37,9 +42,7 @@ body {
 }
 
 .header {
-  width: 1504px;
   height: 164px;
-  margin: 0 auto;
   padding-top: 52px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
