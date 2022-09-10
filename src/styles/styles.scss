@@ -1,5 +1,15 @@
-body {
-	background-color: red;
+@font-face {
+	font-family: "FrankRegular";
+	src: url("../fonts/FrankRegular/FrankRegular.eot");
+	src: url("../fonts/FrankRegular/FrankRegular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/FrankRegular/FrankRegular.woff") format("woff"),
+		url("../fonts/FrankRegular/FrankRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+* {
+	font-family: "FrankRegular", sans-serif;
 }
 
 @import '../components/header/header';
