@@ -10,8 +10,36 @@
   font-family: "FrankRegular", sans-serif;
 }
 
+body {
+  background-color: #E5E5E5;
+}
+
+.button {
+  width: 224px;
+  height: 50px;
+  padding: 16px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #9F0023;
+  border: 2px solid #9F0023;
+  background-color: #E5E5E5;
+  border-radius: 56px;
+}
+
+.button_submit {
+  width: 162px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  background-color: #373334;
+}
+
 header {
-  color: green;
+  width: 1504px;
+  height: 164px;
+  margin: 0 auto;
+  padding-top: 52px;
 }
 
 main {

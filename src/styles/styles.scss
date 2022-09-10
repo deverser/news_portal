@@ -12,6 +12,11 @@
 	font-family: "FrankRegular", sans-serif;
 }
 
+body {
+	background-color: #E5E5E5;
+}
+
+@import '../components/buttons/buttons';
 @import '../components/header/header';
 @import '../components/main/main';
 @import '../components/footer/footer';
