@@ -78,9 +78,15 @@ function copyImages() {
   .pipe(dest('./public/images/'));
 }
 
+function copyIcons() {
+   return src('./src/icons/**/*')
+  .pipe(dest('./public/icons/'));
+}
+
 async function copyResources() {
   copyFonts();
   copyImages();
+  copyIcons();
 }
 
 async function clean() {
