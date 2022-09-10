@@ -67,6 +67,10 @@ function scripts() {
 //   .pipe(browserSync.reload({ stream: true, }));
 // }
 
+function copyResetStyles() {
+	return src('./src/styles/reset.css')
+	.pipe(dest('./public/css/'));
+}
 
 function copyFonts() {
   return src('./src/fonts/**/*')
@@ -87,6 +91,7 @@ async function copyResources() {
   copyFonts();
   copyImages();
   copyIcons();
+  copyResetStyles();
 }
 
 async function clean() {
