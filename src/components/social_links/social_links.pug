@@ -1,6 +1,6 @@
-mixin social_links(name='')
-	span.social__text Подписывайтесь на нас:
-	div(class="social__links " + name)
+mixin social_links(text='', links='')
+	span(class="social__text " + text) Подписывайтесь на нас:
+	div(class="social__links " + links)
 		a(href="https://www.youtube.com/" target='_blank') 
 			img.social__links_icon(src="icons/youtube.svg", alt="youtube")
 		a(href="https://ru-ru.facebook.com/" target='_blank')

@@ -51,16 +51,3 @@
 
 	}
 }
-
-.social {
-	display: flex;
-	gap: 48px;
-	justify-content: flex-end;
-
-	&__links {
-		display: flex;
-		padding-top: 3px;
-		gap: 16px;
-		justify-content: space-between;
-	}
-}
