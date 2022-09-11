@@ -227,6 +227,12 @@ body {
   margin-top: 46px;
 }
 
+.card__intro {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 footer {
   width: 100%;
   background-color: #FFFFFF;
