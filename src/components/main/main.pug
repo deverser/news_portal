@@ -1,2 +1,20 @@
-main 
-	div.container какой-то текст
+main.main 
+	div.container 
+		h1.main__title Все новости
+		.main__navi
+			a.main__navi_link(href="#") Главная
+			span.main__navi_divider  / 
+			a.main__navi_link(href="#") Новости
+		.main__news
+			.main__news_card.card 
+				img.card__cover(src='images/news1.png' alt='news_cover')
+				span.card__hashtag
+					a.card__hashtag_links(href="#") Медицина
+					a.card__hashtag_links(href="#") Общество
+				span.card__date 02/02/2021 
+				h2.card__title Благодаря поддержке предпринимателей. Златоустовские поликлиники оснастили холодильными установками для хранения вакцины 
+			.main__news_card.card 2
+			.main__news_card.card 3
+			.main__news_card.card 4
+			.main__news_card.card 5
+			.main__news_card.card 6
