@@ -138,6 +138,7 @@ main {
 
 footer {
   width: 100%;
+  background-color: #FFFFFF;
 }
 
 .footer {
@@ -147,7 +148,6 @@ footer {
   grid-template-rows: 183px 139px;
   -webkit-column-gap: 50px;
   column-gap: 50px;
-  background-color: #FFFFFF;
 }
 
 .footer__social {

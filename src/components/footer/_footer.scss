@@ -1,5 +1,6 @@
 footer {
 	width: 100%;
+	background-color: #FFFFFF;
 }
 
 .footer {
@@ -8,7 +9,6 @@ footer {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 183px 139px;
 	column-gap: 50px;
-	background-color: #FFFFFF;
 
 	&__social {
 		grid-column: 1 / 4;
