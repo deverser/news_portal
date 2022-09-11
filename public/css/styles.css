@@ -36,6 +36,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+  margin-bottom: 16px;
 }
 
 .social__links {
@@ -46,13 +47,14 @@ body {
 }
 
 .social__links-footer {
+  height: 28px;
   padding-top: 0;
   padding-bottom: 52px;
   justify-content: flex-start;
 }
 
 .social-footer {
-  gap: 16px;
+  gap: 0;
   flex-direction: column;
 }
 
@@ -136,16 +138,14 @@ main {
 
 .footer {
   height: 324px;
-  padding-top: 59px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 183px 139px;
   -webkit-column-gap: 50px;
   column-gap: 50px;
 }
 
 .footer__social {
   grid-column: 1/4;
-  align-self: start;
   border-bottom: 2px solid #373334;
 }

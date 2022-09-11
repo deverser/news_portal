@@ -1,14 +1,12 @@
 .footer {
 	height: 324px;
-	padding-top: 59px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 183px 139px;
 	column-gap: 50px;
 
 	&__social {
 		grid-column: 1 /4;
-		align-self: start;
 		border-bottom: 2px solid #373334;
 	}
 }
