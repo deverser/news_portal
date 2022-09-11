@@ -72,5 +72,41 @@
 		line-height: 26px;
 	}
 
-	&-detailed {}
+	&-detailed {
+		height: 359px;
+		margin-top: 85px;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: [top] auto auto auto [bottom];
+		background-color: #fff;
+
+		& .card {
+
+			&__link,
+			&__cover {
+				grid-column: 1 / 2;
+				grid-template-rows: top / bottom;
+				align-self: center;
+
+				&-title {
+					grid-column: 2 / 4;
+					grid-row: 2 / 3;
+				}
+			}
+
+			&__hashtag {
+				grid-column: 2 / 3;
+				grid-template-rows: top / 2;
+			}
+
+			&__date {
+				grid-column: 3 / 4;
+				grid-row: 1 / 2;
+			}
+
+			&__intro {
+				grid-column: 2 / 4;
+				grid-row: 3 / 4;
+			}
+		}
+	}
 }

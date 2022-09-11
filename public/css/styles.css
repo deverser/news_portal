@@ -249,6 +249,42 @@ body {
   line-height: 26px;
 }
 
+.card-detailed {
+  height: 359px;
+  margin-top: 85px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: [top] auto auto auto [bottom];
+  background-color: #fff;
+}
+
+.card-detailed .card__link,
+.card-detailed .card__cover {
+  grid-column: 1/2;
+  grid-template-rows: top/bottom;
+  align-self: center;
+}
+
+.card-detailed .card__link-title,
+.card-detailed .card__cover-title {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.card-detailed .card__hashtag {
+  grid-column: 2/3;
+  grid-template-rows: top/2;
+}
+
+.card-detailed .card__date {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.card-detailed .card__intro {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
 footer {
   width: 100%;
   background-color: #FFFFFF;
