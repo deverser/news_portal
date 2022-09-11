@@ -1,12 +1,40 @@
+footer {
+	width: 100%;
+}
+
 .footer {
 	height: 324px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 183px 139px;
 	column-gap: 50px;
+	background-color: #FFFFFF;
 
 	&__social {
-		grid-column: 1 /4;
+		grid-column: 1 / 4;
 		border-bottom: 2px solid #373334;
+	}
+
+	&__copyright {
+		grid-column: 1 / 2;
+		align-self: center;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+
+		&_links {
+			display: block;
+			color: #373334;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__dev_logo {
+		grid-column: 3 / 4;
+		align-self: center;
+		justify-self: end;
 	}
 }
