@@ -173,6 +173,16 @@ body {
   margin-top: 83px;
 }
 
+.card__link {
+  display: block;
+  color: #373334;
+  text-decoration: none;
+}
+
+.card__link:hover {
+  text-decoration: underline;
+}
+
 .card__cover {
   margin-bottom: 35px;
 }
@@ -209,6 +219,11 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
+}
+
+.card__arrow {
+  display: block;
+  margin-top: 46px;
 }
 
 footer {

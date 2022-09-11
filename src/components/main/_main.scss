@@ -38,44 +38,4 @@
 	}
 }
 
-.card {
-	&__cover {
-		margin-bottom: 35px;
-	}
-
-	&__hashtag {
-		&_links {
-			margin-right: 20px;
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 22px;
-			color: #9F0023;
-			text-decoration: none;
-
-			&:hover {
-				text-decoration: underline;
-			}
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
-
-	&__date {
-		margin-left: 31px;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 16px;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
-		color: #959595;
-	}
-
-	&__title {
-		margin-top: 12px;
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 27px;
-	}
-}
+@import '../card/card';
