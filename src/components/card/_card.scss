@@ -75,27 +75,31 @@
 	&-detailed {
 		height: 359px;
 		margin-top: 85px;
-		grid-template-columns: auto auto auto;
+		grid-template-columns: 517px 597px auto;
 		grid-template-rows: [top] auto auto auto [bottom];
 		background-color: #fff;
 
 		& .card {
 
-			&__link,
-			&__cover {
+			&__link {
 				grid-column: 1 / 2;
-				grid-template-rows: top / bottom;
+				grid-row: top / bottom;
 				align-self: center;
+				justify-self: end;
 
 				&-title {
-					grid-column: 2 / 4;
+					grid-column: 2 / 3;
 					grid-row: 2 / 3;
 				}
 			}
 
+			&__cover {
+				margin-bottom: 0;
+			}
+
 			&__hashtag {
 				grid-column: 2 / 3;
-				grid-template-rows: top / 2;
+				grid-row: top / 2;
 			}
 
 			&__date {
@@ -104,7 +108,7 @@
 			}
 
 			&__intro {
-				grid-column: 2 / 4;
+				grid-column: 2 / 3;
 				grid-row: 3 / 4;
 			}
 		}
