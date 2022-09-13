@@ -31,7 +31,7 @@
 	&__news {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 500px 500px;
 		justify-items: center;
 		column-gap: 50px;
 		row-gap: 74px;
