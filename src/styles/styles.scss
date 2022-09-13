@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "FrankRegular";
+	font-family: "Frank";
 	src: url("../fonts/FrankRegular/FrankRegular.eot");
 	src: url("../fonts/FrankRegular/FrankRegular.eot?#iefix")format("embedded-opentype"),
 		url("../fonts/FrankRegular/FrankRegular.woff") format("woff"),
@@ -8,8 +8,18 @@
 	font-weight: 400;
 }
 
+@font-face {
+	font-family: "Frank";
+	src: url("../fonts/FrankLight/FrankLight.eot");
+	src: url("../fonts/FrankLight/FrankLight.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/FrankLight/FrankLight.woff") format("woff"),
+		url("../fonts/FrankLight/FrankLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 300;
+}
+
 * {
-	font-family: "FrankRegular", sans-serif;
+	font-family: "Frank", sans-serif;
 }
 
 body {
