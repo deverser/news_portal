@@ -211,7 +211,6 @@ body {
 
 .card__hashtag_links {
   margin-right: 20px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #9F0023;
@@ -229,7 +228,6 @@ body {
 .card__date {
   grid-column: 2/3;
   align-self: center;
-  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.05em;
@@ -252,6 +250,7 @@ body {
 }
 
 .card__intro {
+  display: none;
   font-weight: 300;
   font-size: 16px;
   line-height: 26px;
@@ -284,6 +283,7 @@ body {
 .card-detailed .card__hashtag {
   grid-column: 2/3;
   grid-row: top/2;
+  align-self: center;
 }
 
 .card-detailed .card__date {
@@ -292,11 +292,9 @@ body {
 }
 
 .card-detailed .card__intro {
+  display: block;
   grid-column: 2/3;
   grid-row: 3/4;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
 }
 
 .card-detailed .card__arrow {
