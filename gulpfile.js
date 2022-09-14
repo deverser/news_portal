@@ -45,7 +45,7 @@ function styles() {
 
 
 function scripts() {
-  return src('./src/js/script.js')
+  return src('./src/js/*.js')
 //   .pipe(
 //     includeFiles({
 //       includePaths: './src/components/**/',
@@ -67,8 +67,8 @@ function scripts() {
 //   .pipe(browserSync.reload({ stream: true, }));
 // }
 
-function copyResetStyles() {
-	return src('./src/styles/reset.css')
+function copyStyles() {
+	return src('./src/styles/*.css')
 	.pipe(dest('./public/css/'));
 }
 
@@ -91,7 +91,7 @@ async function copyResources() {
   copyFonts();
   copyImages();
   copyIcons();
-  copyResetStyles();
+  copyStyles();
 }
 
 async function clean() {

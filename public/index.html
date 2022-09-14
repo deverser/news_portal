@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/itc-custom-select.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body> 
@@ -30,6 +31,23 @@
       <div class="container"> 
         <h1 class="main__title">Все новости</h1>
         <div class="main__navi"><a class="main__navi_link" href="#">Главная</a><span class="main__navi_divider"> / </span><a class="main__navi_link" href="#">Новости</a></div>
+        <div class="news_selection">
+          <div class="itc-select" id="select-1">
+            <button class="itc-select__toggle" type="button" name="rubric" value="" data-select="toggle" data-index="-1">Выбрать рубрику</button>
+            <div class="itc-select__dropdown">
+              <ul class="itc-select__options">
+                <li class="itc-select__option" data-select="option" data-value="medicine" data-index="0">Медицина </li>
+                <li class="itc-select__option" data-select="option" data-value="society" data-index="1">Общество </li>
+                <li class="itc-select__option" data-select="option" data-value="household" data-index="2">Коммуналка </li>
+                <li class="itc-select__option" data-select="option" data-value="politics" data-index="3">Политика </li>
+                <li class="itc-select__option" data-select="option" data-value="sport" data-index="4">Спорт </li>
+                <li class="itc-select__option" data-select="option" data-value="development" data-index="5">Вектор развития</li>
+                <li class="itc-select__option" data-select="option" data-value="lorem" data-index="6">Lorem. </li>
+                <li class="itc-select__option" data-select="option" data-value="ipsum" data-index="7">Lorem. </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="main__news">
           <div class="main__news_card card"><a class="card__link" href="#"> <img class="card__cover" src="images/news1.png" alt="news_cover"></a><span class="card__rubric"><a class="card__rubric_links" href="#">Медицина</a><a class="card__rubric_links" href="#">Общество</a><span class="card__date">02/02/2021 </span></span><a class="card__link" href="#">
               <h2 class="card__title">Благодаря поддержке предпринимателей. Златоустовские поликлиники оснастили холодильными установками для хранения вакцины </h2></a><img class="card__arrow" src="icons/card_arrow.svg" alt="card_arrow"></div>
@@ -58,5 +76,7 @@
         <div class="footer__copyright">© 2021 «Златоустовское телевидение»<a class="footer__copyright_links" href="#">Политика конфиденциальности</a></div><img class="footer__dev_logo" src="icons/xpage.svg" alt="xpage_logo">
       </div>
     </footer>
+    <script src="js/itc-custom-select.js"></script>
+    <script src="js/script.js"> </script>
   </body>
 </html>
