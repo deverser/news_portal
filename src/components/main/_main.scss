@@ -40,3 +40,10 @@
 }
 
 @import '../card/card';
+
+.news_selection {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 50px;
+	margin-top: 55px;
+}

@@ -109,6 +109,10 @@ function watchDev() {
     'change',
     browserSync.reload
   );
+  watch('./src/styles/*.css', copyStyles).on(
+	'change',
+	browserSync.reload
+  );
 }
 
 

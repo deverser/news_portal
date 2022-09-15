@@ -302,6 +302,14 @@ body {
   right: 50px;
 }
 
+.news_selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 50px;
+  column-gap: 50px;
+  margin-top: 55px;
+}
+
 footer {
   width: 100%;
   background-color: #FFFFFF;
