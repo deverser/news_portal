@@ -74,6 +74,11 @@
   color: #9F0023;
 }
 
+.itc-select__option_disabled {
+	padding: 19px 24px;
+	color: #959595;
+}
+
 /* .itc-select__option_selected::after {
   width: 0.75rem;
   height: 0.75rem;
