@@ -47,3 +47,17 @@
 	column-gap: 50px;
 	margin-top: 55px;
 }
+
+.date_select {
+	grid-column: 1 / 2;
+	border: 2px solid #373334;
+
+	&__input {
+		padding: 19px 24px;
+		background-color: #E5E5E5;
+		font-size: 16px;
+		font-style: normal;
+		line-height: 1.4;
+		border: none;
+	}
+}
