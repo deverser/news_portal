@@ -9,5 +9,3 @@ let toggleButton = rubricSelect.querySelector('button.itc-select__toggle_disable
 if (toggleButton != null) {
 	select1.dispose();
 }
-
-const picker = new Pikaday({ field: document.getElementById('datepicker') });
