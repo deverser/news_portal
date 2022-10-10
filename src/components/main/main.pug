@@ -6,8 +6,14 @@ main.main
 			span.main__navi_divider  / 
 			a.main__navi_link(href="#") Новости
 		.news_selection
-			.date_select
-				
+			.date-picker
+				.selected-date
+				.dates
+					.month
+						.arrows.prev-mth &lt;
+						.mth
+						.arrows.next-mth &gt;
+					.days
 			.itc-select#select-1
 				//- Когда нужно селектор рубрики сделать неактивным у кнопки button ставится класс .itc-select__toggle_disabled
 				button.itc-select__toggle(type="button" name="rubric" value="" data-select="toggle" data-index="-1") Выбрать рубрику

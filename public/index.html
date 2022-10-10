@@ -32,7 +32,17 @@
         <h1 class="main__title">Все новости</h1>
         <div class="main__navi"><a class="main__navi_link" href="#">Главная</a><span class="main__navi_divider"> / </span><a class="main__navi_link" href="#">Новости</a></div>
         <div class="news_selection">
-          <div class="date_select"></div>
+          <div class="date-picker">
+            <div class="selected-date"></div>
+            <div class="dates">
+              <div class="month">
+                <div class="arrows prev-mth">&lt;</div>
+                <div class="mth"></div>
+                <div class="arrows next-mth">&gt;</div>
+              </div>
+              <div class="days"></div>
+            </div>
+          </div>
           <div class="itc-select" id="select-1">
             <button class="itc-select__toggle" type="button" name="rubric" value="" data-select="toggle" data-index="-1">Выбрать рубрику</button>
             <div class="itc-select__dropdown">
