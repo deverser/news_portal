@@ -348,6 +348,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 58px;
+  font-size: 14px;
   border-bottom: 2px solid #EEE;
 }
 
@@ -372,7 +374,8 @@ body {
 .date-picker .dates .days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  height: 200px;
+  height: 291px;
+  font-size: 12px;
 }
 
 .date-picker .dates .days .day {
@@ -383,12 +386,17 @@ body {
 }
 
 .date-picker .dates .days .day.selected {
-  background-color: #00CA85;
+  background-color: #E5E5E5;
+  border: 2px solid #9F0023;
+  border-radius: 100%;
 }
 
 .date-picker .dates.active {
   display: block;
   z-index: 10;
+  height: 351px;
+  border: 2px solid #373334;
+  background-color: #E5E5E5;
 }
 
 footer {
