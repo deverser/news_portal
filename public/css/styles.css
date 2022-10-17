@@ -374,12 +374,18 @@ body {
 .date-picker .dates .days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
   height: 291px;
   font-size: 12px;
+  margin: 0 20px;
+  border-top: 2px solid #373334;
 }
 
 .date-picker .dates .days .day {
   display: flex;
+  width: 28px;
+  height: 28px;
   justify-content: center;
   align-items: center;
   color: #313131;
@@ -387,7 +393,7 @@ body {
 
 .date-picker .dates .days .day.selected {
   background-color: #E5E5E5;
-  border: 2px solid #9F0023;
+  border: 1px solid #373334;
   border-radius: 100%;
 }
 
