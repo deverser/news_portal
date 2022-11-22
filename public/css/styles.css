@@ -397,6 +397,15 @@ body {
   border-radius: 100%;
 }
 
+.date-picker .week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-items: center;
+  font-size: 12px;
+  margin: 0 20px;
+}
+
 .date-picker .dates.active {
   display: block;
   z-index: 10;

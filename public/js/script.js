@@ -20,14 +20,17 @@ const prev_mth_element = document.querySelector('.date-picker .dates .month .pre
 const days_element = document.querySelector('.date-picker .dates .days');
 
 const months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+const day_shorts = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
 
 let date = new Date();
 let day = date.getDate();
+let weekday = date.getDay(); 
 let month = date.getMonth();
 let year = date.getFullYear();
 
 let selectedDate = date;
 let selectedDay = day;
+let selectedWeekDay = weekday;
 let selectedMonth = month;
 let selectedYear = year;
 
@@ -70,6 +73,18 @@ function goToPrevMonth (e) {
 	populateDates();
 }
 
+const week = document.createElement('div');
+week.classList.add('week');
+dates_element.appendChild(week);
+let amount_weekdays = 7;
+	for (let i = 0; i < amount_weekdays; i++) {
+		const weekDay = document.createElement('div');
+		weekDay.innerHTML = day_shorts[i];
+		weekDay.classList.add('weekday');
+		week.appendChild(weekDay);
+	}
+
+
 function populateDates (e) {
 	days_element.innerHTML = '';
 	let amount_days = 31;
@@ -79,6 +94,7 @@ function populateDates (e) {
 	}
 
 	for (let i = 0; i < amount_days; i++) {
+		
 		const day_element = document.createElement('div');
 		day_element.classList.add('day');
 		day_element.textContent = i + 1;
@@ -98,7 +114,7 @@ function populateDates (e) {
 
 			populateDates();
 		});
-
+		
 		days_element.appendChild(day_element);
 	}
 }
